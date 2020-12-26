@@ -1,3 +1,7 @@
 name: dockerfile
 image: okteto/dockerfile
 command: docker run
+sync:
+  - .:/
+persistentVolume:
+  enabled: false
