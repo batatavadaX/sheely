@@ -1,2 +1,14 @@
-build:
-  dockerfile: Dockerfile
+name: dockerfile
+services:
+  dockerfile:
+    public: true
+    image: okteto/dockerfile:stacks
+    build:
+      context: .
+      dockerfile: Dockerfile
+    replicas: 1
+    ports:
+      - 8080
+    resources:
+      cpu: 1000m
+      memory: 3048Mi
