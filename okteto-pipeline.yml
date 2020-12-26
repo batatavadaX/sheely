@@ -1,2 +1,2 @@
 deploy:
-  - okteto build -t okteto.dev/dockerfile
+  - okteto build -t okteto.dev/Dockerfile
