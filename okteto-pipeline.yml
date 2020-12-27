@@ -1,2 +1,8 @@
-deploy:
-  - okteto build -t okteto.dev/sheely:master
+name: sheely
+image: okteto/dev:latest
+command: bash
+sync:
+- .:/usr/src/app
+forward:
+- 8080:8080
+persistentVolume: {}
