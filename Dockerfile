@@ -36,8 +36,7 @@ COPY /files /home/files
 # This will copy your rclone config.
 RUN sudo cp /home/files/rclone.conf /home/.config/rclone/
 
-# ngrok will forward localhost to http or https
-RUN npm install -g ngrok
+
 
 
 # This will run Setup.sh and excute all your command with sudo.
