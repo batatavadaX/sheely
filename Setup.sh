@@ -13,6 +13,6 @@ echo "Performing additional setup 3"
 add-apt-repository -y ppa:dawidd0811/neofetch
 apt-get install -y neofetch
 
-sudo apt-get install tmate
+sudo apt-get install -y tmate
 
 
