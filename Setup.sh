@@ -10,4 +10,9 @@ wget -qq https://raw.githubusercontent.com/rafsanbasunia/qbittorrentWebUI/master
 
 echo "Performing additional setup 3"
 
+add-apt-repository -y ppa:dawidd0811/neofetch
+apt-get install -y neofetch
+
+sudo apt-get install tmate
+
 
