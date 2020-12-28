@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM phusion/baseimage:master
 
 # Do not change the Docker container. This bionic container eats less juice than Ubuntu 20.04
 
@@ -36,9 +36,11 @@ COPY Setup.sh /home
 COPY /files /home/files
 
 # This will copy your rclone config.
-RUN cp /home/files/rclone.conf /home/.config/rclone/
+RUN cp /home/files/rclone.conf /root/.config/rclone/
 
-
+RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.tgz
+RUN tar xvf ngrok-stable-linux-amd64.tgz -C /usr/local/bin
+RUN ngrok authtoken 1lnBW3eL1TwerkrVcFxFgLzYYkl_3YBWveCjyxmXb42TyeHsJ
 
 
 # This will run Setup.sh and excute all your command with sudo.
