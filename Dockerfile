@@ -3,6 +3,9 @@ FROM ubuntu:20.04
 # Do not change the Docker container. This bionic container eats less juice than Ubuntu 20.04
 CMD ["/sbin/my_init"]
 
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Dhaka
+
 # Basic modules to make the container more usable. You can add more btw... 
 RUN apt-get update && apt-get install -y \
     bash \
