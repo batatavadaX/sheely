@@ -21,8 +21,8 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /home
 
 # Make Your Custom Directory with sudo
-RUN mkdir -p /home/.config/qBittorrent
-RUN mkdir -p /home/.config/rclone/
+RUN mkdir -p /root/.config/qBittorrent
+RUN mkdir -p /root/.config/rclone/
 
 # This is you default dowload directory for qbit...
 RUN mkdir -p /home/dl
