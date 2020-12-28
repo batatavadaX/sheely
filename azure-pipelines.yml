@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'phusion/baseimage:master'
+  vmImage: 'ubuntu:latest'
 
 steps:
 - script: echo Hello, world!
