@@ -1,9 +1,7 @@
-FROM ubuntu:20.04
-
+FROM phusion/baseimage:master
 # Do not change the Docker container. This bionic container eats less juice than Ubuntu 20.04
 
-ENV DEBIAN_FRONTEND=noninteractive
-ENV TZ=Asia/Dhaka
+CMD ["/sbin/my_init"]
 
 # Basic modules to make the container more usable. You can add more btw... 
 RUN apt-get update && apt-get install -y \
