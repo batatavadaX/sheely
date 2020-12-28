@@ -1,4 +1,4 @@
-FROM phusion/baseimage:master
+FROM ubuntu:20.04
 
 # Do not change the Docker container. This bionic container eats less juice than Ubuntu 20.04
 CMD ["/sbin/my_init"]
@@ -34,7 +34,7 @@ COPY Setup.sh /home
 COPY /files /home/files
 
 # This will copy your rclone config.
-RUN sudo cp /home/files/rclone.conf /home/.config/rclone/
+RUN cp /home/files/rclone.conf /home/.config/rclone/
 
 
 
