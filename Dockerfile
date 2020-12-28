@@ -1,4 +1,4 @@
-FROM phusion/baseimage:master
+FROM ubuntu:20.04
 
 # Do not change the Docker container. This bionic container eats less juice than Ubuntu 20.04
 
