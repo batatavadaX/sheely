@@ -33,8 +33,6 @@ COPY Setup.sh /home
 # This will copy your extra files which you need inside the container.
 COPY /files /home/files
 
-# This will copy your rclone config.
-RUN cp /home/files/rclone.conf /root/.config/rclone/
 
 RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.tgz
 RUN tar xvf ngrok-stable-linux-amd64.tgz -C /usr/local/bin
