@@ -26,6 +26,7 @@ RUN mkdir -p /root/.config/rclone/
 
 # This is you default dowload directory for qbit...
 RUN mkdir -p /home/dl
+RUN mkidr -p /home/cache
 
 COPY bot.sh /home
 COPY Setup.sh /home
